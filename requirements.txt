@@ -1,0 +1,8 @@
+torch>=2.0
+transformers>=4.30
+sentencepiece
+soundfile
+datasets>=3.0
+huggingface_hub>=0.25
+scipy>=1.10
+numpy>=1.24

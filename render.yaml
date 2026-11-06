@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: voxsure-api
+    runtime: python
+    buildCommand: pip install -r backend/requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.2
+      - key: VOXSURE_PROVIDER
+        value: demo
+      - key: VOXSURE_MAX_UPLOAD_MB
+        value: 25
+      - key: VOXSURE_ALLOWED_ORIGINS
+        sync: false
+      - key: SARVAM_API_KEY
+        sync: false

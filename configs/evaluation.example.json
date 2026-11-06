@@ -1,0 +1,12 @@
+{
+  "name": "voxsure-sample-pair-not-a-benchmark",
+  "provenance": "Illustrative, locally supplied example text; not measured VoxSure performance.",
+  "reference": "the quick brown fox",
+  "hypothesis": "the quick brown fox",
+  "normalization": {
+    "lowercase": false,
+    "strip_punctuation": false,
+    "normalize_whitespace": true,
+    "normalize_numbers": false
+  }
+}
